@@ -1,0 +1,261 @@
+
+
+/* #region Common */
+*
+{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body
+{
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+img
+{
+        width: 100%;
+}
+
+a
+{
+        text-decoration: none;
+}
+
+.container
+{
+        width: 80%;
+        max-width: 1152px;
+        margin: auto;
+}
+
+.row
+{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+}
+
+/* #endregion Common */
+
+
+/* #region Utility */
+.flex-direction-column
+{
+        flex-direction: column;
+}
+
+.justify-space-betweem
+{
+        justify-content: space-between;
+}
+
+.col-4
+{
+        width: calc(100% / 12 * 4);
+}
+
+.col-6
+{
+        width: calc(100% / 12 * 6);   
+}
+.col-8
+{
+        width: calc(100% / 12 * 8);
+}
+.col-9
+{
+        width: calc(100% / 12 * 9);
+}
+.col-3
+{
+        width: calc(100% / 12 * 3);
+}
+.col-12
+{
+        width: 100%;
+}
+
+[class^="col-"]
+{
+        padding-left: 1rem;
+        padding-right: 1rem;
+}
+
+.d-flex
+{
+        display: flex;
+}
+
+.align-items-center
+{
+        align-content: center;
+}
+
+/* #endregion Utility */
+
+/* #region Header */
+
+.logo
+{
+        width: 80px;
+}
+
+/* #endregion Header */
+
+/* #region Main */
+/* #endregion Main */
+.features
+{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+}
+
+.planning
+{
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+}
+
+.testimonials
+{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+}
+.testimonials .text, .testimonials .testimonial
+{
+        margin-top: 1rem;
+        margin-bottom: 1rem;  
+}
+
+.benefits
+{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+}
+
+.about-us
+{
+        padding-top: 2rem;
+        padding-bottom: 2rem;       
+}
+
+/* #region Footer */
+/* #endregion Footer */
+#footer
+{
+        margin-bottom: 5rem;
+}
+/* #region Mobile */
+/* #endregion Mobile */
+
+/* #region Tablet */
+/* #endregion Tablet */
+
+/* #region Desktop */
+/* #endregion Desktop */
+
+/* #region Debug */
+
+/* heights for row e container */
+.debug .row, .debug .container
+{
+        height: 100%;
+}
+
+/* background colors (and some heights) */
+.debug #header
+{
+        height:50px;
+        background-color: yellow; 
+}
+.debug .features
+{
+        background-color: violet;
+}
+.debug .planning
+{
+        background-color: darkslateblue;
+}
+.debug .testimonials
+{
+        background-color: khaki;
+}
+.debug .benefits
+{
+        background-color: cornflowerblue;
+}
+.debug .about-us
+{
+        background-color: yellowgreen;
+}
+.debug .free
+{
+        height: 300px;
+        background-color: darkred;
+}
+.debug #footer
+{
+        height: 150px;
+        background-color: black;
+}
+ 
+
+.debug .logo
+{
+        background-color: red;
+        height: 100%;
+}
+
+.debug .nav-item
+{
+        height: 100%;
+        background-color: gray;
+        width: 50px;
+        border: 1px dashed red;
+} 
+
+.debug .features .col-8, .debug .features .col-4
+{
+        height: 200px;
+        background-color: aquamarine;
+        border: 1px dashed red;
+}
+
+.debug .planning .col-6
+{
+        height: 400px;
+        background-color: coral;
+        border: 1px dashed red;
+}
+
+.debug .testimonials .text
+{
+        height: 70px;
+        background-color: sienna;
+}
+
+.debug .testimonials .testimonial
+{
+        height: 100px;
+        background-color:teal ;
+        border: 1px dashed white;
+}
+
+
+.debug .benefits .col-4
+{
+        height: 300px;
+        background-color: darkmagenta;
+        border: 1px dashed cyan;
+}
+
+.debug .about-us .col-9, .debug .about-us .col-3
+{
+        height: 600px;
+        background-color: red;
+        border: 1px dashed blue;
+}
+/* #endregion debug */
+
