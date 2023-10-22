@@ -152,7 +152,7 @@ a
 /* #endregion Footer */
 
 /* #region media-query Mobile mbl*/
-@media screen and (min-width: 320px)
+@media screen and (min-width: 300px)
 {
         .nav
         {
@@ -197,10 +197,14 @@ a
         {
                 width: calc(100% / 12 * 9);  
         }
+        .col-6-tbl
+        {
+                width: calc(100% / 12 * 6);
+        }
 }
 /* #endregion Tablet */
 
-/* #region Laptob/Desktop */
+/* #region Laptob/Desktop dsk */
 @media screen and (min-width: 1024px)
 {
         .nav
@@ -211,9 +215,19 @@ a
         {
                 display: none;
         }    
+
+        .col-6-dsk
+        {
+                width: calc(100% / 12 * 6);     
+        }
+        .col-4-dsk
+        {
+                width: calc(100% / 12 * 4);       
+        }
+
 }
 
-/* #endregion Desktop */
+/* #endregion Laptop/Desktop */
 
 /* #region Debug */
 
