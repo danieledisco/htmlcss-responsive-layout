@@ -1,5 +1,3 @@
-
-
 /* #region Common */
 *
 {
@@ -38,7 +36,6 @@ a
 }
 
 /* #endregion Common */
-
 
 /* #region Utility */
 .flex-direction-column
@@ -79,8 +76,9 @@ a
 
 [class^="col-"]
 {
-        padding-left: 1rem;
-        padding-right: 1rem;
+ /*        padding-left: 1rem;
+        padding-right: 1rem; */
+        padding: 1rem;
 }
 
 .d-flex
@@ -102,10 +100,14 @@ a
         width: 80px;
 }
 
+.hamburger
+{
+        display: none;
+}
 /* #endregion Header */
 
 /* #region Main */
-/* #endregion Main */
+
 .features
 {
         padding-top: 2rem;
@@ -126,7 +128,7 @@ a
 .testimonials .text, .testimonials .testimonial
 {
         margin-top: 1rem;
-        margin-bottom: 1rem;  
+        margin-bottom: 2rem;  
 }
 
 .benefits
@@ -140,20 +142,77 @@ a
         padding-top: 2rem;
         padding-bottom: 2rem;       
 }
+/* #endregion Main */
 
 /* #region Footer */
-/* #endregion Footer */
 #footer
 {
         margin-bottom: 5rem;
 }
-/* #region Mobile */
-/* #endregion Mobile */
+/* #endregion Footer */
 
-/* #region Tablet */
+/* #region media-query Mobile mbl*/
+@media screen and (min-width: 320px)
+{
+        .nav
+        {
+                display: none;
+        }
+        .hamburger
+        {
+                display: inline;
+        }
+        .col-12-mbl
+        {
+                width: 100%;
+        }
+}
+
+/* #endregion media-query Mobile mbl */
+
+/* #region Tablet tbl*/
+@media screen and (min-width: 768px)
+{
+        .nav
+        {
+                display: none;
+        }
+        .hamburger
+        {
+                display: inline;
+        }
+        .col-8-tbl
+        {
+                width: calc(100% / 12 * 8);  
+        }
+        .col-4-tbl
+        {
+                width: calc(100% / 12 * 4);  
+        }
+        .col-3-tbl
+        {
+                width: calc(100% / 12 * 3);  
+        }
+        .col-9-tbl
+        {
+                width: calc(100% / 12 * 9);  
+        }
+}
 /* #endregion Tablet */
 
-/* #region Desktop */
+/* #region Laptob/Desktop */
+@media screen and (min-width: 1024px)
+{
+        .nav
+        {
+                display:flex;
+        }
+        .hamburger
+        {
+                display: none;
+        }    
+}
+
 /* #endregion Desktop */
 
 /* #region Debug */
@@ -236,11 +295,21 @@ a
         background-color: sienna;
 }
 
-.debug .testimonials .testimonial
+.debug .testimonial
 {
-        height: 100px;
+/*         height: calc( 2 * 150px + 2rem ); */
         background-color:teal ;
         border: 1px dashed white;
+}
+.debug .testimonial .col-3
+{
+        height: 150px;
+        background-color: white;
+}
+.debug .testimonial .col-9
+{
+        height: 150px;
+        background-color: black;
 }
 
 
